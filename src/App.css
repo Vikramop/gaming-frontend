@@ -1,42 +1,209 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;500;800&family=Raleway&display=swap');
+
+.navbar {
+  background-color: #1d1d1b;
+}
+
+.home {
+  height: 1085px;
+  width: 100%;
+  /* overflow: hidden; */
+  background-image: url(./assets/game3.jpg);
+  background-size: cover;
+  opacity: 0.9;
+  color: #fff;
+}
+
+/* .homeh {
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  padding-top: 10em;
+} */
+
+.video-frame {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 60vh;
+  width: 855px;
+  /* margin-left: 220px; */
+  background-image: url('');
+
+  background-color: #531414;
+}
+
+.homeb {
+  height: 50px;
+  width: 100%;
+  /* background: #e99f9f; */
+}
+
+/* .blobs {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  z-index: -5;
+  height: 450px;
+  width: 450px;
+} */
+
+.commingsoon {
+  height: 100px;
+  padding: 15px 0;
+  width: 100%;
+  background-image: linear-gradient(
+    to left,
+    #800080,
+    #740081,
+    #680081,
+    #5a0082,
+    #4b0082
+  );
+  white-space: nowrap;
+  overflow-x: auto;
+  overflow-y: hidden;
+}
+
+.commingsoon::-webkit-scrollbar {
+  display: none;
+}
+
+.commingsoon h1 {
+  color: aliceblue;
+  font-size: 40px;
+  font-weight: 700;
+  display: inline-block;
+  animation-timing-function: linear;
+  margin-right: 30px;
+  align-items: center;
+  justify-content: center;
+  animation-name: scroll;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  /* background-color: red; */
+}
+
+.players {
+  background-color: #1d1d1b;
+  height: 650px;
+  width: 100%;
+}
+
+.playersimg {
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+}
+
+.playersimg img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  transition: all ease 0.8s;
+}
+
+.playersimg:hover img {
+  scale: 1.2;
+}
+
+.features {
+  height: 604px;
+  width: 100%;
+  background-color: #1d1d1b;
+}
+.feature1 {
+  width: 400px;
+  height: 450px;
   text-align: center;
+  /* background-color: red; */
+}
+.feature2 {
+  width: 400px;
+  height: 450px;
+  text-align: center;
+  /* background-color: #fff; */
+}
+.feature3 {
+  width: 400px;
+  height: 450px;
+  text-align: center;
+  /* background-color: blue; */
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
+.tokenomics {
+  width: 100%;
+  height: 300px;
+  background-color: #f4f4f8;
+  justify-content: center;
+  align-items: center;
+  display: flex;
 }
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
+.t1 {
+  /* background-color: red; */
+  width: 245px;
+  height: 110px;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
 }
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+.t2 {
+  width: 245px;
+  height: 110px;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  border-left: 1px solid #000;
+  border-right: 1px solid #000;
+}
+.t3 {
+  width: 245px;
+  height: 110px;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  border-right: 1px solid #000;
+}
+.t4 {
+  width: 245px;
+  height: 110px;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  /* background-color: red; */
+}
+.faq {
+  height: 700px;
+  width: 100%;
+  background-color: #1d1d1b;
+  color: #f4f4f8;
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
+.q1 {
+  width: 600px;
+  height: 520px;
+  /* background-color: red; */
+  display: flex;
+  flex-direction: column;
+}
+.q2 {
+  width: 600px;
+  height: 520px;
+  /* background-color: red; */
+  display: flex;
+  flex-direction: column;
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
   }
-  to {
-    transform: rotate(360deg);
+  100% {
+    transform: translateX(calc(-100% - 32px));
   }
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
-}
-
-.card {
-  padding: 2em;
-}
-
-.read-the-docs {
-  color: #888;
 }
