@@ -1,9 +1,22 @@
-import React from 'react';
+// import Clipboard from '../assets/clipboard.svg';
 
 const Home = () => {
   return (
     <div className="home">
-      <div className="py-24">
+      <div className="contractaddress py-4 ">
+        <div>
+          <p className="text-xl font-semibold">Contract addresss</p>
+          <p className="text-xl font-semibold">
+            0x994A258c7Dec633b5b15376f850D5Ea701179E79
+          </p>
+        </div>
+        <div>
+          {/* <button className="clip">
+            <img src={Clipboard} />
+          </button> */}
+        </div>
+      </div>
+      <div className="py-12">
         <h1 className=" flex justify-center text-[3em]  font-bold">
           WORLD'S FIRST LIVE STREAMING
         </h1>

@@ -1,7 +1,27 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;500;800&family=Raleway&display=swap');
 
+/* background-image: linear-gradient(to bottom, #800080, #740081, #680081, #5a0082, #4b0082); */
+
+html {
+  scroll-behavior: smooth;
+}
+
 .navbar {
   background-color: #1d1d1b;
+}
+
+.contractaddress {
+  margin-left: 500px;
+  width: 470px;
+  height: 100px;
+  background-color: #1d1d1b;
+  color: #fff;
+  left: 300px;
+  padding-left: 10px;
+}
+
+.clip {
+  background-color: #fff;
 }
 
 .home {
@@ -10,16 +30,10 @@
   /* overflow: hidden; */
   background-image: url(./assets/game3.jpg);
   background-size: cover;
-  opacity: 0.9;
+  opacity: 1;
   color: #fff;
+  /* filter: brightness(70%); */
 }
-
-/* .homeh {
-  align-items: center;
-  justify-content: center;
-  display: flex;
-  padding-top: 10em;
-} */
 
 .video-frame {
   display: flex;
@@ -27,7 +41,6 @@
   align-items: center;
   height: 60vh;
   width: 855px;
-  /* margin-left: 220px; */
   background-image: url('');
 
   background-color: #531414;
@@ -39,7 +52,7 @@
   /* background: #e99f9f; */
 }
 
-/* .blobs {
+.blobs {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -47,7 +60,7 @@
   z-index: -5;
   height: 450px;
   width: 450px;
-} */
+}
 
 .commingsoon {
   height: 100px;
@@ -177,6 +190,7 @@
   flex-direction: column;
   /* background-color: red; */
 }
+
 .faq {
   height: 700px;
   width: 100%;
@@ -197,6 +211,37 @@
   /* background-color: red; */
   display: flex;
   flex-direction: column;
+}
+
+.major {
+  height: 550px;
+  width: 100%;
+  background-image: url('../src/assets/game1.jpeg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  padding-top: 125px;
+}
+
+.whitespace {
+  height: 275px;
+  width: 100%;
+  background-color: #f4f4f8;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.footer {
+  width: 100%;
+  height: 300px;
+  background-color: #1d1d1b;
+  color: #fff;
+}
+
+.footerimg {
+  width: 150px;
 }
 
 @keyframes scroll {

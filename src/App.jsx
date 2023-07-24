@@ -6,6 +6,7 @@ import Faq from './components/Faq';
 import Tokenomics from './components/Tokenomics';
 import Footer from './components/Footer';
 import './App.css';
+import Major from './components/Major';
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
       <Navbar />
       <Home />
       <Players />
+      <Major />
       <Features />
       <Tokenomics />
       <Faq />

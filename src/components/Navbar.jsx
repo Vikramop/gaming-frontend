@@ -1,13 +1,15 @@
-import React from 'react';
+import { useState } from 'react';
 import Logo from '../assets/logo.png';
 
 const Navbar = () => {
+  const [toggle, setToggle] = useState(true);
+
   return (
     <div>
       <nav className="bg-[#1D1D1B] border-gray-200 ">
         <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-2">
           <a className="flex items-center">
-            <img src={Logo} className=" w-40 mr-3" alt="Flowbite Logo" />
+            <img src={Logo} className=" w-40 mr-3" alt="Blockbet Logo" />
           </a>
           <button
             data-collapse-toggle="navbar-default"
@@ -16,7 +18,7 @@ const Navbar = () => {
             aria-controls="navbar-default"
             aria-expanded="false"
             onClick={() => {
-              console.log('clicked');
+              setToggle((toggle) => !toggle);
             }}
           >
             <span className="sr-only">Open main menu</span>
@@ -49,7 +51,7 @@ const Navbar = () => {
               </li>
               <li>
                 <a
-                  href="#"
+                  href="/Players"
                   className="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
                 >
                   Features
@@ -57,7 +59,7 @@ const Navbar = () => {
               </li>
               <li>
                 <a
-                  href="#"
+                  href="/Features"
                   className="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
                 >
                   Tokenomics
@@ -65,15 +67,15 @@ const Navbar = () => {
               </li>
               <li>
                 <a
-                  href="#"
+                  href="/Tokenomics"
                   className="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
                 >
-                  Services
+                  FAQ
                 </a>
               </li>
               <li>
                 <a
-                  href="#"
+                  href="/"
                   className="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
                 >
                   Join
