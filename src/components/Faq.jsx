@@ -7,7 +7,7 @@ const Faq = () => {
       <p className="flex justify-center pt-4 text-[25px] font-light">
         We know you have questions too.
       </p>
-      <div className="flex justify-center gap-1 mt-8">
+      <div className="faqc flex justify-center gap-1 mt-8">
         <div className="q1 px-4">
           <h5 className=" text-[25px] font-bold">
             What is the schedule for the races on your platform?

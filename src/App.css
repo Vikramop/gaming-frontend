@@ -25,10 +25,6 @@ html {
   padding-left: 10px;
 }
 
-.clip {
-  background-color: #fff;
-}
-
 .home {
   height: auto;
   width: 100%;
@@ -174,8 +170,6 @@ html {
   justify-content: center;
   display: flex;
   flex-direction: column;
-  border-left: 1px solid #000;
-  border-right: 1px solid #000;
 }
 .t3 {
   width: 245px;
@@ -184,7 +178,6 @@ html {
   justify-content: center;
   display: flex;
   flex-direction: column;
-  border-right: 1px solid #000;
 }
 .t4 {
   width: 245px;
@@ -256,6 +249,16 @@ html {
   }
   100% {
     transform: translateX(calc(-100% - 32px));
+  }
+}
+
+@media (min-width: 600px) {
+  .t2 {
+    border-left: 1px solid #000;
+    border-right: 1px solid #000;
+  }
+  .t3 {
+    border-right: 1px solid #000;
   }
 }
 
@@ -342,6 +345,117 @@ html {
   }
   .tokenomics {
     height: 200px;
+  }
+  .commingsoon {
+    height: 70px;
+  }
+  .commingsoon h1 {
+    font-size: 1.8rem;
+  }
+  .players p {
+    font-size: 1rem;
+  }
+  .players h1 {
+    font-size: 2.4rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .video-frame {
+    width: 310px;
+    height: 170px;
+  }
+  .players {
+    height: auto;
+  }
+
+  .players p {
+    text-align: center;
+  }
+  .home {
+    height: auto;
+  }
+  .home p {
+    font-size: 1rem;
+  }
+  .herotext {
+    font-size: 0.5rem;
+  }
+
+  .major {
+    height: 450px;
+  }
+  .whitespace {
+    height: 200px;
+  }
+  .major h2 {
+    font-size: 2rem;
+  }
+
+  .major p {
+    font-size: 0.8rem;
+  }
+  .features {
+    height: 1000px;
+  }
+  .featurec {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-self: center;
+  }
+  .feature1 {
+    height: 250px;
+  }
+  .feature2 {
+    height: 250px;
+  }
+  .feature3 {
+    height: 250px;
+  }
+  .features h6 {
+    font-size: 1.5rem;
+  }
+  .features p {
+    margin-top: 0.5rem;
+    font-size: 1rem;
+  }
+  .featurec img {
+    width: 350px;
+    margin-left: 30px;
+  }
+
+  .tokenomics h3 {
+    font-size: 2.8rem;
+  }
+  .tokenomics p {
+    font-size: 1.5rem;
+    font-weight: 700;
+  }
+  .tokenomics {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 450px;
+  }
+  .t2 {
+    border-top: 1px solid #000;
+    border-bottom: 1px solid #000;
+  }
+  .t3 {
+    border-bottom: 1px solid #000;
+  }
+  /* .faqc {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  } */
+  /* .faq h5 {
+    font-size: 1.5rem;
+  } */
+
+  .faq {
+    height: 1200px;
   }
   .commingsoon {
     height: 70px;

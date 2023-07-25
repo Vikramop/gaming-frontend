@@ -6,7 +6,7 @@ const Features = () => {
       <h1 className="flex justify-center text-neutral-100 py-12 font-bold text-[3rem]">
         Features!
       </h1>
-      <div className=" flex justify-center mt-12 text-neutral-100">
+      <div className=" featurec flex justify-center mt-12 text-neutral-100">
         <div className="feature1">
           <img src={Line} />
           <h6 className="flex justify-center text-[30px] font-bold text-neutral-100">
