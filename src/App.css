@@ -10,6 +10,11 @@ html {
   background-color: #1d1d1b;
 }
 
+.video-frame {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
 .contractaddress {
   margin-left: 500px;
   width: 470px;
@@ -25,10 +30,10 @@ html {
 }
 
 .home {
-  height: 1085px;
+  height: auto;
   width: 100%;
   /* overflow: hidden; */
-  background-image: url(./assets/game3.jpg);
+  background-image: url(./assets/game4.jpg);
   background-size: cover;
   opacity: 1;
   color: #fff;
@@ -216,7 +221,8 @@ html {
 .major {
   height: 550px;
   width: 100%;
-  background-image: url('../src/assets/game1.jpeg');
+  background-image: url('../src/assets/game3.jpg');
+  background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -250,5 +256,103 @@ html {
   }
   100% {
     transform: translateX(calc(-100% - 32px));
+  }
+}
+
+@media (max-width: 930px) {
+  .video-frame {
+    width: 700px;
+  }
+  .herotext {
+    font-size: 0.7rem;
+  }
+  .major h2 {
+    font-size: 3.5rem;
+  }
+
+  .major p {
+    font-size: 1.2rem;
+  }
+
+  .features {
+    height: 700px;
+  }
+  .tokenomics h3 {
+    font-size: 3rem;
+  }
+  .tokenomics p {
+    font-size: 1.2rem;
+  }
+  .players p {
+    font-size: 1.2rem;
+  }
+  .players h1 {
+    font-size: 2.8rem;
+  }
+  .players {
+    height: 500px;
+  }
+  .home {
+    height: auto;
+  }
+}
+
+@media (max-width: 768px) {
+  .players {
+    height: auto;
+  }
+  .home {
+    height: auto;
+  }
+  .video-frame {
+    width: 500px;
+    height: 300px;
+  }
+  .faq {
+    height: 800px;
+  }
+  .major {
+    height: 450px;
+  }
+  .whitespace {
+    height: 200px;
+  }
+  .major h2 {
+    font-size: 2.8rem;
+  }
+
+  .major p {
+    font-size: 0.8rem;
+  }
+  .features {
+    height: 600px;
+  }
+  .features h6 {
+    font-size: 1.5rem;
+  }
+  .features p {
+    margin-top: 0.5rem;
+    font-size: 0.8rem;
+  }
+  .tokenomics h3 {
+    font-size: 2rem;
+  }
+  .tokenomics p {
+    font-size: 1rem;
+  }
+  .tokenomics {
+    height: 200px;
+  }
+  .commingsoon {
+    height: 70px;
+  }
+  .commingsoon h1 {
+    font-size: 1.8rem;
+  }
+  .players p {
+    font-size: 1rem;
+  }
+  .players h1 {
+    font-size: 2.4rem;
   }
 }
