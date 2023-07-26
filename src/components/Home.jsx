@@ -97,15 +97,15 @@ const Home = () => {
       <div className=" flex gap-6 justify-center align-baseline my-14">
         <button
           type="button"
-          className="text-white bg-purple-700 hover:bg-purple-800 focus:outline-none focus:ring-4 focus:ring-purple-300 font-medium rounded-full text-sm px-8 py-3 text-center mb-2 dark:bg-purple-600 dark:hover:bg-purple-700 dark:focus:ring-purple-900"
+          className="text-white w-48 h-12 bg-purple-700 hover:bg-purple-800 focus:outline-none focus:ring-4 focus:ring-purple-300 font-medium rounded-full text-sm px-8 py-3 text-center mb-2 dark:bg-purple-600 dark:hover:bg-purple-700 dark:focus:ring-purple-900"
         >
-          Start betting
+          START BETTING
         </button>
         <button
           type="button"
-          className="text-white bg-purple-700 hover:bg-purple-800 focus:outline-none focus:ring-4 focus:ring-purple-300 font-medium rounded-full text-sm px-8 py-3 text-center mb-2 dark:bg-purple-600 dark:hover:bg-purple-700 dark:focus:ring-purple-900"
+          className="text-[#6E2687] w-48 h-12  hover:bg-slate-400 focus:outline-none focus:ring-4 focus:ring-purple-300 font-medium rounded-full text-sm px-8 py-3 text-center mb-2 dark:bg-white dark:hover:bg-slate-300 dark:focus:ring-purple-900"
         >
-          Chart
+          CHART
         </button>
       </div>
       <div className="commingsoon ">
