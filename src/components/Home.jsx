@@ -1,9 +1,15 @@
 // import Clipboard from '../assets/clipboard.svg';
+import React, { useRef } from 'react';
+import { TwitchEmbed } from 'react-twitch-embed';
 import { toast } from 'react-toastify';
 import ContentCopyIcon from '@mui/icons-material/ContentCopy';
 import { Typography, IconButton } from '@mui/material';
 
 const Home = () => {
+  const embed = useRef();
+  const handleReady = (e) => {
+    embed.current = e;
+  };
   return (
     <div className="home">
       <div className=" flex justify-center ">
@@ -91,8 +97,28 @@ const Home = () => {
           Discover new betting avenues weekly with blockbet
         </p>
       </div>
-
-      <div className="video-frame flex justify-center">video player</div>
+      <div className="blob">
+        <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+          <path
+            fill="#6F2687"
+            d="M36,-48.6C46.4,-41.9,54.4,-31.1,56.5,-19.6C58.5,-8.1,54.5,4.2,51.7,18.1C48.9,32,47.4,47.5,39,55.6C30.6,63.7,15.3,64.2,1.5,62.1C-12.3,60,-24.5,55.3,-38.3,49C-52.2,42.7,-67.6,34.8,-76.1,21.6C-84.7,8.4,-86.4,-10.1,-78.2,-22.3C-69.9,-34.4,-51.7,-40.2,-37,-45.5C-22.3,-50.7,-11.1,-55.4,0.8,-56.5C12.8,-57.7,25.5,-55.2,36,-48.6Z"
+            transform="translate(100 100)"
+          />
+        </svg>
+      </div>
+      <div className="video-frame flex justify-center">
+        {' '}
+        <TwitchEmbed
+          channel="BlockBetLive"
+          autoplay
+          muted
+          withChat={false}
+          darkMode={false}
+          hideControls={false}
+          allowFullscreen={true}
+          onVideoReady={handleReady}
+        />
+      </div>
 
       <div className=" flex gap-6 justify-center align-baseline my-14">
         <button

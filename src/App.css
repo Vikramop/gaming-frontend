@@ -33,23 +33,36 @@ html {
   background-size: cover;
   opacity: 1;
   color: #fff;
+  background-blend-mode: saturation;
   /* filter: brightness(70%); */
 }
 
 .video-frame {
+  position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
   height: 60vh;
   width: 855px;
-  background-image: url('');
+  /* background-image: url(''); */
+  border-radius: 20px;
+  /* background-color: #531414; */
+}
 
-  background-color: #531414;
+.blob {
+  position: absolute;
+  /* background-color: red; */
+  width: 700px;
+  height: 400px;
+  /* background: #fff; */
+  top: 290px;
+  right: 600px;
 }
 
 .homeb {
   height: 50px;
   width: 100%;
+  z-index: 9;
   /* background: #e99f9f; */
 }
 
