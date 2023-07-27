@@ -57,6 +57,27 @@ html {
   /* background: #fff; */
   top: 290px;
   right: 600px;
+  transform: rotate(-180deg);
+  animation: transform 1s ease-in-out infinite;
+}
+
+@keyframes transform {
+  0%,
+  100% {
+    border-radius: 33% 67% 70% 30% / 30% 30% 70% 70%;
+  }
+  20% {
+    border-radius: 37% 63% 51% 49% / 37% 65% 35% 63%;
+  }
+  40% {
+    border-radius: 36% 64% 64% 36% / 64% 48% 52% 36%;
+  }
+  60% {
+    border-radius: 37% 63% 51% 49% / 30% 30% 70% 70%;
+  }
+  80% {
+    border-radius: 40% 60% 42% 58% / 41% 51% 49% 59%;
+  }
 }
 
 .homeb {
@@ -468,8 +489,8 @@ html {
     height: auto;
   }
   .video-frame {
-    width: 500px;
-    height: 300px;
+    width: 550px;
+    height: 400px;
   }
   .faq {
     height: 800px;
@@ -535,7 +556,7 @@ html {
 @media (max-width: 600px) {
   .video-frame {
     width: 310px;
-    height: 170px;
+    height: 400px;
   }
   .players {
     height: auto;
