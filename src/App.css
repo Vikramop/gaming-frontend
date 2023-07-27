@@ -15,7 +15,7 @@ html {
   margin-left: auto;
   margin-right: auto;
 }
-.contractaddress {
+/* .contractaddress {
   margin-left: 500px;
   width: 470px;
   height: 100px;
@@ -23,7 +23,7 @@ html {
   color: #fff;
   left: 300px;
   padding-left: 10px;
-}
+} */
 
 .home {
   height: auto;
@@ -208,7 +208,7 @@ html {
   flex-direction: column;
   align-items: center;
   justify-content: center; */
-  top: 35%;
+  top: 30%;
 
   right: 30%;
 }
@@ -221,7 +221,7 @@ html {
 }
 .img-s1h p {
   color: #ffffff;
-  font-size: 1.1rem;
+  font-size: 1rem;
   font-weight: 400;
 }
 .img-s1h:hover p {
@@ -309,7 +309,7 @@ html {
 }
 .t1 {
   /* background-color: red; */
-  width: 245px;
+  width: 250px;
   height: 110px;
   align-items: center;
   justify-content: center;
@@ -318,7 +318,7 @@ html {
 }
 
 .t2 {
-  width: 245px;
+  width: 250px;
   height: 110px;
   align-items: center;
   justify-content: center;
@@ -326,7 +326,7 @@ html {
   flex-direction: column;
 }
 .t3 {
-  width: 245px;
+  width: 250px;
   height: 110px;
   align-items: center;
   justify-content: center;
@@ -334,13 +334,29 @@ html {
   flex-direction: column;
 }
 .t4 {
-  width: 245px;
+  width: 250px;
   height: 110px;
   align-items: center;
   justify-content: center;
   display: flex;
   flex-direction: column;
   /* background-color: red; */
+}
+.t1 img {
+  width: 70px;
+  padding-right: 15px;
+}
+.t2 img {
+  width: 70px;
+  padding-right: 15px;
+}
+.t3 img {
+  width: 70px;
+  padding-right: 15px;
+}
+.t4 img {
+  width: 70px;
+  padding-right: 15px;
 }
 
 .faq {
@@ -478,6 +494,23 @@ html {
   }
   .img-s1h p {
     font-size: 0.8rem;
+  }
+
+  .t1 img {
+    width: 50px;
+    padding-right: 10px;
+  }
+  .t2 img {
+    width: 50px;
+    padding-right: 10px;
+  }
+  .t3 img {
+    width: 50px;
+    padding-right: 10px;
+  }
+  .t4 img {
+    width: 50px;
+    padding-right: 10px;
   }
 }
 

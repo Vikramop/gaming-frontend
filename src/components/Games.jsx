@@ -36,7 +36,7 @@ const Games = () => {
           </div>
         </div>
       </div>
-      <div className="img-sec gap-1 p-2">
+      <div className="img-sec gap-1 p-1">
         <div className="img-sec2">
           <img src={Mario} alt={Img} />
           <div className="img-s2h">
@@ -48,11 +48,11 @@ const Games = () => {
             </a>
           </div>
         </div>
-        <div className="img-sec1 text-center">
+        <div className="img-sec1  max-md:text-center max-sm:text-sm">
           <img src={Football} alt={Img} />
           <div className="img-s1h">
             <h5>
-              Football Premier <br />
+              Premier <br />
               League
             </h5>
             <a>
