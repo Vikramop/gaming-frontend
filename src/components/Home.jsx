@@ -3,7 +3,8 @@ import React, { useRef } from 'react';
 import { TwitchEmbed } from 'react-twitch-embed';
 import { toast } from 'react-toastify';
 import ContentCopyIcon from '@mui/icons-material/ContentCopy';
-import { Typography, IconButton } from '@mui/material';
+import { Typography, IconButton, Box } from '@mui/material';
+import Image from '../assets/game4.jpg';
 
 const Home = () => {
   const embed = useRef();
@@ -11,13 +12,30 @@ const Home = () => {
     embed.current = e;
   };
   return (
-    <div className="home">
+    <Box
+      className="home"
+      sx={{
+        width: '100%',
+        height: 'auto',
+        position: 'relative',
+        overflow: 'hidden',
+        ':before': {
+          content: "''",
+          width: '100%',
+          height: 'auto',
+          position: 'absolute',
+          zIndex: '-1',
+          brighness: '40%',
+          backgroundImage: `url(${Image})`,
+        },
+      }}
+    >
       <div className=" flex justify-center ">
         <div
           style={{
             display: 'flex',
             flexDirection: 'row',
-            marginTop: '34px',
+            marginTop: '94px',
 
             background: '#1A1A1A',
             padding: '12px',
@@ -146,7 +164,7 @@ const Home = () => {
         <h1>Comming Soon</h1>
         <h1>Comming Soon</h1>
       </div>
-    </div>
+    </Box>
   );
 };
 

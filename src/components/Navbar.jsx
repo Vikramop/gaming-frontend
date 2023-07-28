@@ -1,13 +1,63 @@
-import { useState } from 'react';
 import Logo from '../assets/logo.png';
+import { useState } from 'react';
+import { Bars3BottomRightIcon, XMarkIcon } from '@heroicons/react/24/solid';
 
 const Navbar = () => {
-  const [toggle, setToggle] = useState(true);
+  // const [toggle, setToggle] = useState(true);
+  let Links = [
+    { name: 'Players', link: '/players' },
+    { name: 'Features', link: '/' },
+    { name: 'Tokenomics', link: '/' },
+    { name: 'FAQ', link: '/' },
+  ];
+  let [open, setOpen] = useState(false);
+  // const [isActive, setIsActive] = useState();
 
   return (
     <div>
       <nav className="bg-[#1D1D1B] border-gray-200 ">
-        <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-2">
+        <div className="shadow-md w-full fixed top-0 left-0 z-[9]">
+          <div className="md:flex items-center justify-between bg-[#1D1D1B] py-4 md:px-10 px-7">
+            {/* logo section */}
+            <div className="font-bold text-2xl cursor-pointer flex items-center gap-1 w-36">
+              <img src={Logo} />
+            </div>
+            {/* Menu icon */}
+            <div
+              onClick={() => setOpen(!open)}
+              className="absolute right-8 top-6 cursor-pointer md:hidden w-7 h-7"
+            >
+              {open ? (
+                <XMarkIcon className="text-white" />
+              ) : (
+                <Bars3BottomRightIcon className="text-white" />
+              )}
+            </div>
+            {/* linke items */}
+            <ul
+              className={`md:flex md:items-center md:pb-0 pb-12 absolute md:static bg-[#1D1D1B]  md:z-auto z-[-1] left-0 w-full md:w-auto md:pl-0 pl-9 transition-all duration-500 ease-in ${
+                open ? 'top-12' : 'top-[-490px]'
+              }`}
+            >
+              {Links.map((link) => (
+                <li className="md:ml-8 md:my-0 my-7 font-semibold">
+                  <a
+                    href={link.link}
+                    className="text-white hover:text-[#9f31c1] duration-500"
+                  >
+                    {link.name}
+                  </a>
+                </li>
+              ))}
+              <button className="btn bg-[#702687] text-white md:ml-8 font-semibold px-3 py-1 rounded duration-500 md:static">
+                Join
+              </button>
+            </ul>
+            {/* button */}
+          </div>
+        </div>
+
+        {/* <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-2">
           <a className="flex items-center">
             <img src={Logo} className=" w-40 mr-3" alt="Blockbet Logo" />
           </a>
@@ -16,7 +66,7 @@ const Navbar = () => {
             type="button"
             className="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
             aria-controls="navbar-default"
-            aria-expanded="false"
+            aria-expanded="true"
             onClick={() => {
               setToggle((toggle) => !toggle);
             }}
@@ -31,9 +81,9 @@ const Navbar = () => {
             >
               <path
                 stroke="currentColor"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="2"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth="2"
                 d="M1 1h15M1 7h15M1 13h15"
               />
             </svg>
@@ -83,7 +133,7 @@ const Navbar = () => {
               </li>
             </ul>
           </div>
-        </div>
+        </div> */}
       </nav>
     </div>
   );

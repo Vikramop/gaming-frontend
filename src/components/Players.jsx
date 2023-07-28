@@ -6,7 +6,7 @@ import Elon from '../assets/elon.jpg';
 
 const Players = () => {
   return (
-    <div className="players">
+    <div className="players" id="players">
       <div className="  text-white pt-[5rem]">
         <h1 className="flex justify-center  text-[3rem] font-bold">
           The Marble Battle

@@ -24,12 +24,12 @@ html {
   height: auto;
   width: 100%;
   /* overflow: hidden; */
-  background-image: linear-gradient(rgb(17, 15, 15), rgb(33, 30, 30)),
-    url(./assets/game4.jpg);
+  background-image: url(./assets/game4.jpg);
   background-size: cover;
   opacity: 1;
   color: #fff;
   background-blend-mode: lighten;
+  backdrop-filter: brightness(50%);
   /* filter: brightness(70%); */
 }
 
@@ -55,7 +55,7 @@ html {
   opacity: 1;
   position: absolute;
   left: 250px;
-  top: 450px;
+  top: 430px;
 }
 
 @keyframes transform {
@@ -465,6 +465,7 @@ html {
   .blob {
     width: 650px;
     left: 80px;
+    top: 420px;
   }
   .herotext {
     font-size: 0.7rem;
@@ -536,7 +537,7 @@ html {
   .blob {
     width: 550px;
     height: 350px;
-    left: 70px;
+    left: 0px;
     top: 400px;
   }
   .home {
@@ -614,8 +615,8 @@ html {
   }
   .blob {
     width: 310px;
-    left: 0px;
-    top: 350px;
+    left: 20px;
+    top: 370px;
   }
   .players {
     height: auto;
