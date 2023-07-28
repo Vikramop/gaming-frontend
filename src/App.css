@@ -10,11 +10,6 @@ html {
   background-color: #1d1d1b;
 }
 
-.video-frame {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-}
 /* .contractaddress {
   margin-left: 500px;
   width: 470px;
@@ -29,42 +24,44 @@ html {
   height: auto;
   width: 100%;
   /* overflow: hidden; */
-  background-image: url(./assets/game4.jpg);
+  background-image: linear-gradient(rgb(17, 15, 15), rgb(33, 30, 30)),
+    url(./assets/game4.jpg);
   background-size: cover;
   opacity: 1;
   color: #fff;
-  background-blend-mode: saturation;
+  background-blend-mode: lighten;
   /* filter: brightness(70%); */
 }
 
 .video-frame {
+  margin-left: auto;
+  margin-right: auto;
   position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
   height: 60vh;
   width: 855px;
-  /* background-image: url(''); */
   border-radius: 20px;
-  /* background-color: #531414; */
 }
 
 .blob {
-  position: absolute;
-  /* background-color: red; */
-  width: 700px;
+  background: #702687;
   height: 400px;
-  /* background: #fff; */
-  top: 290px;
-  right: 600px;
-  transform: rotate(-180deg);
-  animation: transform 1s ease-in-out infinite;
+  width: 850px;
+  border-radius: 30% 50% 50% 40%;
+  animation: transform 20s ease-in-out infinite both alternate,
+    movement_one 10s ease-in-out infinite both;
+  opacity: 1;
+  position: absolute;
+  left: 250px;
+  top: 450px;
 }
 
 @keyframes transform {
   0%,
   100% {
-    border-radius: 33% 67% 70% 30% / 30% 30% 70% 70%;
+    border-radius: 33% 67% 70% 50% / 30% 30% 70% 70%;
   }
   20% {
     border-radius: 37% 63% 51% 49% / 37% 65% 35% 63%;
@@ -80,11 +77,19 @@ html {
   }
 }
 
+@keyframes movement_one {
+  0%,
+  100% {
+    transform: none;
+  }
+  50% {
+    transform: translate(13%, 20%) rotateY(10deg) scale(1.2);
+  }
+}
+
 .homeb {
   height: 50px;
   width: 100%;
-  z-index: 9;
-  /* background: #e99f9f; */
 }
 
 .blobs {
@@ -422,6 +427,12 @@ html {
   }
 }
 
+@media (max-width: 1350px) {
+  .blob {
+    width: 700px;
+    left: 200px;
+  }
+}
 @media (min-width: 600px) {
   .t2 {
     border-left: 1px solid #000;
@@ -450,6 +461,10 @@ html {
 @media (max-width: 930px) {
   .video-frame {
     width: 700px;
+  }
+  .blob {
+    width: 650px;
+    left: 80px;
   }
   .herotext {
     font-size: 0.7rem;
@@ -517,6 +532,12 @@ html {
 @media (max-width: 768px) {
   .players {
     height: auto;
+  }
+  .blob {
+    width: 550px;
+    height: 350px;
+    left: 70px;
+    top: 400px;
   }
   .home {
     height: auto;
@@ -590,6 +611,11 @@ html {
   .video-frame {
     width: 310px;
     height: 400px;
+  }
+  .blob {
+    width: 310px;
+    left: 0px;
+    top: 350px;
   }
   .players {
     height: auto;
